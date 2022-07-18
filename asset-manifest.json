@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "https://nft-sale.github.io/example-query/static/css/main.a29be694.css",
-    "main.js": "https://nft-sale.github.io/example-query/static/js/main.7d48486c.js",
+    "main.css": "https://nft-sale.github.io/example-query/static/css/main.e33c7141.css",
+    "main.js": "https://nft-sale.github.io/example-query/static/js/main.7ffa2984.js",
     "index.html": "https://nft-sale.github.io/example-query/index.html",
-    "main.a29be694.css.map": "https://nft-sale.github.io/example-query/static/css/main.a29be694.css.map",
-    "main.7d48486c.js.map": "https://nft-sale.github.io/example-query/static/js/main.7d48486c.js.map"
+    "main.e33c7141.css.map": "https://nft-sale.github.io/example-query/static/css/main.e33c7141.css.map",
+    "main.7ffa2984.js.map": "https://nft-sale.github.io/example-query/static/js/main.7ffa2984.js.map"
   },
   "entrypoints": [
-    "static/css/main.a29be694.css",
-    "static/js/main.7d48486c.js"
+    "static/css/main.e33c7141.css",
+    "static/js/main.7ffa2984.js"
   ]
 }
