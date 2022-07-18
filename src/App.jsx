@@ -30,7 +30,10 @@ function App() {
         <h3>Example Queries</h3>
         <form name="query" onChange={onChange}>
           {
-            Object.entries(Queries).map(([key, { title }]) => (
+            Object
+              .entries(Queries)
+              .sort(([, a], [, b]) => a.order - b.order)
+              .map(([key, { title }]) => (
               <label key={key}>
                 <input
                   type="checkbox"

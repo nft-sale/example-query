@@ -1,9 +1,9 @@
 import { gql } from '@apollo/client'
 
-export const title = 'Get Collections'
+export const title = 'Rankings | 排行榜'
 
 export const query = gql`
-query Collections {
+query Rankings {
   nftcontracts(first: 30) {
     address
     name
@@ -11,3 +11,5 @@ query Collections {
   }
 }
 `
+
+export const order = 2
