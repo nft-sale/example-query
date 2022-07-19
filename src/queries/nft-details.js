@@ -72,3 +72,5 @@ export const variables = {
 };
 
 export const order = 3;
+
+export const type = 'page'

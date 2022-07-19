@@ -11,6 +11,9 @@ query LandingPage($date: Int!) {
     orderBy: volume
     orderDirection: desc
   ) {
+    collection {
+      id # 取得 Collection ID 後, 再透過 "Collection Info" Query
+    }
     date
     floorPrice
     priceCeiling
@@ -25,3 +28,5 @@ export const variables = {
 }
 
 export const order = 0
+
+export const type = 'page'

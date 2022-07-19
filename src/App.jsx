@@ -33,14 +33,15 @@ function App() {
             Object
               .entries(Queries)
               .sort(([, a], [, b]) => a.order - b.order)
-              .map(([key, { title }]) => (
-              <label key={key}>
+              .map(([key, { title, type }]) => (
+              <label key={key} className="selection">
                 <input
                   type="checkbox"
                   checked={ selected === key }
                   value={key}
                   readOnly
                 />
+                <strong className="query-type">{ type }</strong>
                 { title }
               </label>
             ))

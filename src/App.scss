@@ -20,6 +20,17 @@
     flex-grow: 0;
     flex-shrink: 0;
     padding: 0 0 0 1em;
+
+    .selection {
+      margin-bottom: .3em;
+    }
+
+    .query-type {
+      display: inline-block;
+      margin-right: .3em;
+      padding: .1em .3em;
+      background-color: #CCC;
+    }
   }
 
   .right-wrapper {

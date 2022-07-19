@@ -38,3 +38,5 @@ export const variables = {
 }
 
 export const order = 5
+
+export const type = 'page'
