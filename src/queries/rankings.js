@@ -10,7 +10,11 @@ query Rankings {
     orderBy: volume,
     orderDirection: desc
   ) {
-    id # 取得 Collection ID 後, 再透過 "Collection Info" Query
+    id
+    name
+    symbol
+    creator
+    uri
     floorPrice
 		priceCeiling
     avgPrice

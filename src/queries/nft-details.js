@@ -48,6 +48,9 @@ export const query = gql`
           tokenId
           uri
         }
+        owner
+        createdAt
+        updatedAt
       }
     }
 

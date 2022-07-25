@@ -9,11 +9,7 @@ query CollectionInfo($collection: ID!) {
     name
     symbol
     creator
-
-    nfts(first: 1, orderBy: tokenId, orderDirection: asc) {
-      tokenId
-      uri
-    }
+    uri
   }
 }
 `

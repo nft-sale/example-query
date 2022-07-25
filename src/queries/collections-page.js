@@ -9,6 +9,7 @@ query CollectionPage($collection: ID!) {
     name
     symbol
     creator
+    uri
 
     # Items (Filter: all)
 

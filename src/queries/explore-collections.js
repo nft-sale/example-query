@@ -3,7 +3,6 @@ import { gql } from '@apollo/client'
 export const title = 'Explore Collections | 探索'
 
 export const query = gql`
-### 這邊只能得到 Collection ID, 後續要再加一次 Query NFT 才能得到 uri
 query ExploreCollections($date: Int!) {
   # Trending
 	analyticDailyCollections(
@@ -12,7 +11,11 @@ query ExploreCollections($date: Int!) {
     orderDirection: desc
   ) {
 		collection {
-      id # 取得 Collection ID 後, 再透過 "Collection Info" Query
+      id
+      name
+      symbol
+      creator
+      uri
     }
   }
 
@@ -22,7 +25,11 @@ query ExploreCollections($date: Int!) {
     orderBy: volume,
     orderDirection: desc
   ) {
-    id # 取得 Collection ID 後, 再透過 "Collection Info" Query
+    id
+    name
+    symbol
+    creator
+    uri
   }
 
   # Categories:
@@ -36,7 +43,11 @@ query ExploreCollections($date: Int!) {
     text
     collections {
       contract {
-        id # 取得 Collection ID 後, 再透過 "Collection Info" Query
+        id
+        name
+        symbol
+        creator
+        uri
       }
     }
   }
